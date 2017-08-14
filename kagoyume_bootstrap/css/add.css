@@ -1,0 +1,56 @@
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-center{
+text-align:center;
+letter-spacing:-0.4em;
+}
+/*">" .row-centerの直下にある"col-"について適用*/
+/*" "(空白) .row-centerの中に含まれる全ての"col-"について適用*/
+.row-center > [class*='col-'] {
+display:inline-block;
+letter-spacing:0;
+vertical-align:top;
+float:none !important;
+}
+/*.row-centerと.va-middleの両方をタグに含む*/
+.row-center.va-middle > [class*='col-'] {
+vertical-align:middle;
+}
+
+.padding_off {
+    padding: 0px;
+}
+
+.margin_b0 {
+    margin-bottom: 0px;
+}
+
+.margin_b15 {
+    margin-bottom: 15px;
+}
+
+.margin_t0 {
+    margin-top: 0px;
+}
+
+.margin_t10 {
+    margin-top: 10px;
+}
